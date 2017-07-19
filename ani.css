@@ -1,0 +1,83 @@
+/*This is for the linkedin and facebook buttons.
+We basically built a window with the height and width for the non-hover
+and then moved the background position to a blackened version of the same
+button on hover. I would have a look at the original image in the URL. We are moving that image around so that just the button we want is in the window we made.*/
+body {
+  text-align: center;
+}
+
+.linkedin {
+  background-image: url("Social_circle.png"); /*original image.*/
+  background-repeat: no-repeat;
+  height: 57px; /*window*/
+  width: 57px; /*for window*/
+  /*add the border to see the outline of the window.*/
+  /*border: red 1px solid;*/
+  background-position: -168px -25px;
+}
+
+.linkedin:hover {
+  background-position: -168px -93px;
+}
+
+
+
+.facebook {
+  background-image: url("Social_circle.png");
+  background-repeat: no-repeat;
+  height: 57px;
+  width: 57px;
+  background-position: -47px -25px;
+}
+
+.facebook:hover {
+  background-position: -47px -93px;
+}
+
+
+
+
+
+/*This is for the Morrigan jump animation*/
+.animation {
+background-image: url("MorriganVS.png");
+height: 170px;
+width: 100px;
+background-repeat: no-repeat;
+background-position: -0px -520px;
+}
+
+
+
+/*This is for the zero parallax scrolling animation*/
+.zero {
+  background-image: url("zerosprites.png");
+  height: 60px;
+  width: 45px;
+  /*border: red 1px solid;*/
+  background-repeat: no-repeat;
+  background-position: -0px -160px;
+  position: relative;
+  left: 50px;
+  top: 325px;
+  z-index: 10;
+}
+
+/*This one will go the slowest*/
+.back-image {
+  background-image: url("neKNeDa.png");
+  height: 400px;
+  width: 533px;
+  background-size: contain;
+}
+
+/*This grass image is in the foreground and will be faster*/
+.grass {
+  background-image: url("Sonic_Grass.png");
+  background-size: contain;
+  height: 30px;
+  width: 533px;
+  position:relative;
+  left: 0px;
+  top: 310px;
+}
